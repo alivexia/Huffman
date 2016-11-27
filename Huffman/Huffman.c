@@ -2,6 +2,6 @@
 
 int main()
 {
-	prinf("master\n");
+	prinf("develop\n");
 	return 0;
 }
