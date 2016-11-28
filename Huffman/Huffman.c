@@ -9,12 +9,12 @@ typedef struct HF
 	int weight;
 	int parent;
 	int lchild,rchild;
-}
+};
 struct Char
 {
 	char ch[N];
 	int start;
-}
+};
 
 void main()
 {
