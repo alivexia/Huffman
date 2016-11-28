@@ -1,7 +1,21 @@
 #include<stdio.h>
+#include<malloc.h>
+#define N 27
+#define Max 1024
 
-int main()
+
+typedef struct HF
 {
-	prinf("master\n");
-	return 0;
-}
+	int weight;
+	int parent;
+	int lchild,rchild;
+};
+struct Char
+{
+	char ch[N];
+	int start;
+};
+
+void main()
+{
+	struct HF hf[2*N+1];
