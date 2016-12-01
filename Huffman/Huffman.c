@@ -1,21 +1,26 @@
 #include<stdio.h>
 #include<malloc.h>
-#define N 27
-#define Max 1024
 
 
-typedef struct HF
-{
-	int weight;
-	int parent;
-	int lchild,rchild;
-};
-struct Char
-{
-	char ch[N];
-	int start;
-};
+//huffman tree node
+typedef struct node{
+	int value;
+	char letter;
+	struct node *left, *right;
+}NODE, *TreeNode;
 
-void main()
+void input(int *w, char *l, int n)
 {
-	struct HF hf[2*N+1];
+	int i;
+	printf("Please enter letters:");
+	for(i = 0; i < n; i++0)
+		scanf("%c",&l[i]);
+	printf("Please enter letter's weight:");
+	for(i = 0; i < n; i++0)
+		scanf("%d",&w[i]);
+}
+
+int main()
+{
+	int n;
+	int *w,*l;

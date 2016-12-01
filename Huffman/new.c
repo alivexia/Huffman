@@ -14,7 +14,7 @@ struct node {
 typedef struct node Node;
 
 /* 81 = 8.1%, 128 = 12.8% and so on. The 27th frequency is the space. Source is Wikipedia */
-int englishLetterFrequencies[27] = { 81, 15, 28, 43, 128, 23, 20, 61, 71, 2, 1, 40, 24, 69, 76, 20, 1, 61, 64, 91, 28, 10, 24, 1, 20, 1, 130 };
+int englishLetterFrequencies[27] = { 64, 13, 22, 32, 103, 21, 15, 47, 57, 1, 5, 32, 20, 57, 63, 15, 1, 48, 51, 80, 23, 8, 18, 1, 16, 1, 186 };
 
 /*finds and returns the small sub-tree in the forrest*/
 int findSmaller(Node *array[], int differentFrom) {
